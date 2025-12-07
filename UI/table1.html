@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Parameters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px 20px;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #007bff;
+            margin: 0 0 15px 0;
+            padding-top: 0;
+        }
+
+        .tables-container1 {
+    display: flex;
+            align-items: flex-start;
+    justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            max-width: 1200px;
+}
+
+.table-container1 {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+}
+
+table {
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: collapse;
+    border-spacing: 0; /* Remove any spacing */
+    font-size: 14px;
+}
+
+        th, td {
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center; /* Center-align data */
+        }
+
+        th {
+            background-color: #7ce8a6;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            color:#007bff;
+            
+        }
+        p {
+            max-width: 600px;
+            margin-bottom: 20px;
+
+        }
+        .center-text {
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 55px;
+}
+.center-text1 {
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 60px;
+}
+.Ultralytics{
+    width: 700px;
+}
+.Ultralytics1{
+    width: 700px;
+    height: 450px;
+    margin-top: 170px;
+}
+.Ultralytics2{
+    width: 700px;
+    height: 470px;
+    margin-top: 200px;
+}
+.Ultralytics3{
+    width: 800px;
+    height: 270px;
+    margin-bottom: 50px;
+.Ultralytics2{
+    width: 700px;
+    height: 470px;
+    margin-top: 200px;
+}    
+}
+.Ultralytics4{
+    width: 800px;
+    height: 570px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    
+}
+.Ultralytics5{
+    width: 700px;
+    height: 470px;
+}
+.center-text2 {
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 50px;
+    margin-top: 230px;
+}
+.center-text3{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 50px;
+    margin-top: 280px;
+}
+.center-text4{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 200px;
+    margin-top: 70px;
+}
+.center-text5{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 80px;
+    margin-top: 300px;
+}
+.center-text6{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 250px;
+    margin-top: 120px;
+}
+.center-text8{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 250px; /* Makes it take the full height of the viewport */
+    margin-bottom: 250px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tables-container1 {
+        flex-direction: column;
+    }
+    
+    .table-container1 {
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    .Ultralytics, .Ultralytics1, .Ultralytics2, .Ultralytics3, .Ultralytics4, .Ultralytics5 {
+        width: 90%;
+        height: auto;
+        max-width: 600px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    p {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .table-container1 {
+        width: 95%;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 4px;
+    }
+    
+    .Ultralytics, .Ultralytics1, .Ultralytics2, .Ultralytics3, .Ultralytics4, .Ultralytics5 {
+        width: 95%;
+        max-width: 500px;
+    }
+    
+    .center-text, .center-text1, .center-text2, .center-text3, .center-text4, .center-text5, .center-text6, .center-text8 {
+        height: auto;
+        padding: 20px 10px;
+        margin: 20px 0;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    table {
+        font-size: 10px;
+    }
+    
+    th, td {
+        padding: 3px;
+    }
+    
+    .Ultralytics, .Ultralytics1, .Ultralytics2, .Ultralytics3, .Ultralytics4, .Ultralytics5 {
+        width: 100%;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <h2>Training Parameters</h2>
+    <div class="tables-container1">
+        <div class="table-container1">
+            <table>
+                <tr><th>Parameter</th><th>Value</th></tr>
+                <tr><td>Model</td><td>YOLO("yolov8l.pt")</td></tr>
+                <tr><td>Epochs</td><td>60</td></tr>
+                <tr><td>Batch Size</td><td>16</td></tr>
+                <tr><td>Image Size</td><td>640</td></tr>
+                <tr><td>AMP</td><td>True</td></tr>
+                <tr><td>Workers</td><td>4</td></tr>
+                <tr><td>Save Period</td><td>5 epochs</td></tr>
+                <tr><td>Seed</td><td>42</td></tr>
+                <tr><td>Verbose</td><td>True</td></tr>
+                <tr><td>Project</td><td>save_dir</td></tr>
+                <tr><td>Learning Rate (Initial)</td><td>0.001</td></tr>
+            </table>
+        </div>
+        
+        <div class="table-container1">
+            <table>
+                <tr><th>Parameter</th><th>Value</th></tr>
+                <tr><td>Learning Rate (Final)</td><td>1e-5</td></tr>
+                <tr><td>Optimizer</td><td>AdamW</td></tr>
+                <tr><td>Momentum</td><td>0.937</td></tr>
+                <tr><td>Weight Decay</td><td>5e-4</td></tr>
+                <tr><td>Device</td><td>cuda:0</td></tr>
+                <tr><td>Patience</td><td>15 epochs</td></tr>
+                <tr><td>Dropout</td><td>0.2</td></tr>
+                <tr><td>Mosaic</td><td>0.6</td></tr>
+                <tr><td>Mixup</td><td>0.1</td></tr>
+                <tr><td>Label Smoothing</td><td>0.05</td></tr>
+                <tr><td>Cosine Learning Rate</td><td>True</td></tr>
+            </table>
+        </div>
+    </div>
+    <h1>Performance Summary</h1>
+<div class="center-text">
+    <p style="text-align: justify;">
+        The LTVHTV model, trained using Ultralytics YOLO, efficiently detects LTV and HTV vehicles.
+        On the validation set (1,826 images), it achieved an overall mAP@50-95 of 0.785, with LTV at
+        0.726 and HTV at 0.844. On the training set (14,716 images), it performed even better,
+        reaching 0.983 mAP@50-95, with LTV at 0.975 and HTV at 0.992. These results highlight the
+        model’s strong performance and potential for real-world applications.
+    </p>
+</div>
+<div class="center-text1">
+    <img class="Ultralytics" src="images\ltv_htv_performance.png">
+</div>
+<div class="center-text">
+    <p style="text-align: justify;">
+        However, the validation data metrics provide useful insights. For LTV, the precision is 0.86, recall is 0.62, and the F1-score is 0.72, indicating a moderate balance between precision and recall. Meanwhile, HTV shows a precision of 0.89, recall of 0.80, and an F1-score of 0.84, suggesting a stronger overall performance in classification.
+    </p>
+</div>
+<div class="center-text1">
+    <img class="Ultralytics1" src="images\recall_val_ltv_htv.png">
+</div>
+<div class="center-text2">
+    <p style="text-align: justify;">
+        The Training metrics provide useful insights into model performance. For LTV, the precision is 0.93, recall is 0.74, and the F1-score is 0.82, indicating a reasonable balance between precision and recall. On the other hand, HTV demonstrates a precision of 0.96, recall of 0.87, and an F1-score of 0.91, reflecting a stronger classification performance with higher accuracy and consistency.
+    </p>
+</div>
+<div class="center-text1">
+    <img class="Ultralytics2" src="images\recall_train_ltv_htv.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+        The model's validation results indicate strong performance, with an mAP@50 of 0.79, suggesting high accuracy in object detection at a 50% IoU threshold. The mAP@50-95 is 0.65, reflecting decent generalization across stricter IoU levels. These metrics highlight the model's effectiveness in detecting objects with varying precision. The accompanying graph likely visualizes performance trends across confidence scores or categories. 
+    </p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics2" src="images\map5-_val_ltv_htv.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+The training performance metrics indicate a highly effective object detection model. The mAP@50, which measures the mean average precision at an IoU threshold of 0.50, is 0.98, demonstrating excellent detection accuracy. Meanwhile, the mAP@50-95, which evaluates precision across multiple IoU thresholds from 0.50 to 0.95, stands at 0.92, highlighting the model’s robust generalization across varying levels of overlap. These high values suggest that the model performs exceptionally well in identifying objects with minimal errors.
+    </p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics2" src="images\map5-_train_ltv_htv.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+        The graph shows a decreasing trend in both training and validation loss, indicating effective model learning. The training loss remains lower than validation loss, which is expected but should be monitored for overfitting. The model appears stable as validation loss does not fluctuate significantly. Around epochs 55-70, the training loss decreases more rapidly, suggesting further optimization. Overall, the model has achieved stability with low loss values, as highlighted by the final remark.
+    </p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics2" src="images\loss_ltv_htv.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+        The output shows inference details for images of size 640x640 using CUDA. The preprocessing time varies (5.6ms and 2.7ms), while inference time remains around 36.3-36.6ms per image. Postprocessing is faster in the second case (2.2ms vs. 8.9ms). The inference speed is 13.66 FPS, indicating good performance on CUDA. Overall, the model processes images efficiently with stable inference times.
+    </p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics3" src="images\inferece_ltv_htv.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv1.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv2.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv3.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv4.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv5.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv6.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv7.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv8.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv9.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv10.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv11.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv12.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv13.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv14.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv15.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv16.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv17.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv18.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv19.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv20.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv21.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv22.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv23.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv24.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv25.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv26.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv27.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv28.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv29.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv30.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv31.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv32.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv33.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv34.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv35.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv36.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics5" src="images\inf_ltv37.png">
+</div>
+</body>
+</html>

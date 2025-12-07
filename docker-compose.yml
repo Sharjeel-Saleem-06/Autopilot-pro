@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  autopilot-pro:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: autopilot-pro
+    ports:
+      - "7860:7860"
+    environment:
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7860
+    volumes:
+      # Mount models as volumes for easy updates
+      - ./LTV_HTV_Model:/app/LTV_HTV_Model
+      - ./Pedestrian_Model:/app/Pedestrian_Model
+      - ./Traffic_Light_Model:/app/Traffic_Light_Model
+      - ./TRAFFIC_SIGN_MODEL:/app/TRAFFIC_SIGN_MODEL
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          cpus: '2'
+          memory: 4G
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
