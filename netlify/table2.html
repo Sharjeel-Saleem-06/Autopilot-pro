@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Parameters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px 20px;
+            background: #ffffff;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #007bff;
+            margin: 0 0 15px 0;
+            padding-top: 0;
+        }
+
+        .tables-container1 {
+    display: flex;
+            align-items: flex-start;
+    justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            max-width: 1200px;
+}
+
+.table-container1 {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+}
+
+table {
+    width: 100%; /* Ensure table takes full width */
+    border-collapse: collapse;
+    border-spacing: 0; /* Remove any spacing */
+    font-size: 14px;
+}
+
+        th, td {
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center; /* Center-align data */
+        }
+
+        th {
+            background-color: #7ce8a6;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 25px ;
+            color:#007bff;
+            
+        }
+        p {
+            max-width: 600px;
+            margin-bottom: 20px;
+
+        }
+        .center-text {
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 80px;
+}
+.center-text1 {
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 60px;
+}
+.Ultralytics{
+    width: 700px;
+}
+.Ultralytics1{
+    width: 700px;
+    height: 450px;
+    margin-top: 170px;
+}
+.Ultralytics2{
+    width: 700px;
+    height: 470px;
+    margin-top: 200px;
+}
+.Ultralytics6{
+    width: 700px;
+    height: 470px;
+    margin-top: 400px;
+}
+.Ultralytics3{
+    width: 800px;
+    height: 270px;
+    
+}
+.center-text2 {
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 50px;
+    margin-top: 230px;
+}
+.center-text3{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 50px;
+    margin-top: 280px;
+}
+.center-text4{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 200px;
+    margin-top: 70px;
+}
+.center-text5{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 80px;
+    margin-top: 300px;
+}
+.center-text6{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 250px;
+    margin-top: 120px;
+}
+.center-text8{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 250px; /* Makes it take the full height of the viewport */
+    margin-bottom: 250px;
+
+
+}
+.center-text10{
+    text-align: center;  /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 150px; /* Makes it take the full height of the viewport */
+    margin-bottom: 50px;
+    margin-top: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tables-container1 {
+        flex-direction: column;
+    }
+    
+    .table-container1 {
+        width: 80%;
+        margin: 10px auto;
+    }
+    
+    .Ultralytics, .Ultralytics1, .Ultralytics2, .Ultralytics3, .Ultralytics5, .Ultralytics6 {
+        width: 90%;
+        height: auto;
+        max-width: 600px;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    p {
+        max-width: 90%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .table-container1 {
+        width: 95%;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 4px;
+    }
+    
+    .Ultralytics, .Ultralytics1, .Ultralytics2, .Ultralytics3, .Ultralytics5, .Ultralytics6 {
+        width: 95%;
+        max-width: 500px;
+    }
+    
+    .center-text, .center-text1, .center-text2, .center-text3, .center-text4, .center-text5, .center-text6, .center-text8, .center-text10 {
+        height: auto;
+        padding: 20px 10px;
+        margin: 20px 0;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    table {
+        font-size: 10px;
+    }
+    
+    th, td {
+        padding: 3px;
+    }
+    
+    .Ultralytics, .Ultralytics1, .Ultralytics2, .Ultralytics3, .Ultralytics5, .Ultralytics6 {
+        width: 100%;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <h2>Training Parameters</h2>
+    <div class="tables-container1">
+        <div class="table-container1">
+            <table>
+                <tr><th>Parameter</th><th>Value</th></tr>
+                <tr><td>Model</td><td>YOLO("yolov8l.pt")</td></tr>
+                <tr><td>Epochs</td><td>60</td></tr>
+                <tr><td>Batch Size</td><td>16</td></tr>
+                <tr><td>Image Size</td><td>640</td></tr>
+                <tr><td>AMP</td><td>True</td></tr>
+                <tr><td>Workers</td><td>4</td></tr>
+                <tr><td>Save Period</td><td>5 epochs</td></tr>
+                <tr><td>Seed</td><td>42</td></tr>
+                <tr><td>Verbose</td><td>True</td></tr>
+                <tr><td>Project</td><td>save_dir</td></tr>
+                <tr><td>Learning Rate (Initial)</td><td>0.001</td></tr>
+            </table>
+        </div>
+        
+        <div class="table-container1">
+            <table>
+                <tr><th>Parameter</th><th>Value</th></tr>
+                <tr><td>Learning Rate (Final)</td><td>1e-5</td></tr>
+                <tr><td>Optimizer</td><td>AdamW</td></tr>
+                <tr><td>Momentum</td><td>0.937</td></tr>
+                <tr><td>Weight Decay</td><td>5e-4</td></tr>
+                <tr><td>Device</td><td>cuda:0</td></tr>
+                <tr><td>Patience</td><td>15 epochs</td></tr>
+                <tr><td>Dropout</td><td>0.2</td></tr>
+                <tr><td>Mosaic</td><td>0.6</td></tr>
+                <tr><td>Mixup</td><td>0.1</td></tr>
+                <tr><td>Label Smoothing</td><td>0.05</td></tr>
+                <tr><td>Cosine Learning Rate</td><td>True</td></tr>
+            </table>
+        </div>
+    </div>
+    <h1>Performance Summary</h1>
+<div class="center-text">
+    <p style="text-align: justify;">
+        The Pedestrian Detection Model, trained using Ultralytics YOLO, detects Pedestrian in various conditions. On the validation set (4,543 images), it achieved an mAP@50-95 of 0.347, while on the training set (18,000 images), it reached 0.652, showing a performance gap. With precision of 0.692 (val) vs. 0.857 (train) and recall of 0.565 (val) vs. 0.76 (train), the results suggest overfitting. Due to the custom dataset, accuracy is lower than expected, and improvements in dataset quality or augmentation may enhance real-world performance.
+    </p>
+</div>
+<div class="center-text1">
+    <img class="Ultralytics" src="images\performance_ped.png">
+</div>
+<div class="center-text">
+    <p style="text-align: justify;">
+        The Pedestrian Detection Model, shows moderate performance on the validation dataset. The precision is around 0.7, while the recall is lower at approximately 0.55, leading to an F1-score of about 0.63. This suggests the model is better at identifying pedestrian correctly when it predicts them but struggles with missing some instances. Due to the custom dataset, accuracy is lower than expected, and improving dataset quality or balance could enhance model performance.
+    </p>
+</div>
+<div class="center-text1">
+    <img class="Ultralytics1" src="images\pre_val_ped.png">
+</div>
+<div class="center-text2">
+    <p style="text-align: justify;">
+        The Pedestrian Detection Model, achieved 0.85 precision, 0.75 recall, and 0.8 F1-score on the training set, indicating strong performance. The higher recall compared to validation suggests the model learns well but may not generalize perfectly. Further fine-tuning and augmentation could help improve real-world detection accuracy.
+    </p>
+</div>
+<div class="center-text1">
+    <img class="Ultralytics2" src="images\pre_train_ped.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+        The validation metrics for the pedestrian detection model indicate moderate performance. mAP@50 is 0.61, suggesting decent detection accuracy at a 50% IoU threshold. However, mAP@50-95 is significantly lower at 0.35, indicating reduced precision across stricter IoU thresholds. This gap highlights the need for improvements in detecting pedestrians under more challenging conditions, such as occlusions or varying scales.
+    </p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics2" src="images\score_val_ped.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+        The training metrics for the pedestrian detection model indicate strong performance. mAP@50 is 0.85, showing high detection accuracy at a 50% IoU threshold. Meanwhile, mAP@50-95 is 0.65, which, while lower, still suggests the model performs well across varying IoU thresholds. The difference between these values highlights potential areas for further optimization, such as refining pedestrian localization under complex conditions.
+    </p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics2" src="images\mav_ped_val.png">
+</div>
+<div class="center-text3">
+    <p style="text-align: justify;">
+        The training loss and validation loss trends indicate a well-optimized model. The training loss steadily decreases, suggesting effective learning, while the validation loss stabilizes at a higher level, which may indicate some generalization challenges. However, the overall loss values remain low, and the model appears stable, minimizing overfitting.</p>
+</div>
+<div class="center-text4">
+    <img class="Ultralytics2" src="images\loss_ped.png">
+</div>
+
+<div class="center-text8">
+    <img class="Ultralytics6" src="images\inf_ped.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped1.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped2.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped3.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped4.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped5.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped6.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped7.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped8.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped9.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped10.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped11.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped12.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped13.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped14.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped15.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped16.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped17.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped18.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped19.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped20.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\inf_ped21.png">
+</div>
+<div class="center-text8">
+    <img class="Ultralytics2" src="images\conf_ped.png">
+</div>
+</body>
+</html>
