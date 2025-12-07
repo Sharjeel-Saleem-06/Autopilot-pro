@@ -50,6 +50,7 @@ logs/
 
 # Model weights (keep private)
 models/
+netlify/
 
 # OS
 Thumbs.db
